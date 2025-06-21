@@ -20,10 +20,8 @@ public class Lambda implements RequestHandler<Map<String, Object>, Map<String, O
         logger.log("Remaining time: " + context.getRemainingTimeInMillis());
 
         // Get the name from input, default to "World"
-        String name = (String) input.getOrDefault("name", "World");
-        if (Objects.isNull(name)) {
-            name = "World";
-        }
+        Object nameObj = input.getOrDefault("name", "World");
+        String name = Objects.isNull(nameObj) ? "World" : String.valueOf(nameObj);
 
         // Create response
         Map<String, Object> response = new HashMap<>();
