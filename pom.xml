@@ -19,7 +19,7 @@
 
     <!-- AWS Lambda properties -->
     <aws-lambda-java-core.version>1.3.0</aws-lambda-java-core.version>
-    <aws-lambda-java-events.version>3.16.0</aws-lambda-java-events.version>
+    <aws-lambda-java-events.version>3.16.1</aws-lambda-java-events.version>
 
     <junit.version>5.13.1</junit.version>
 
